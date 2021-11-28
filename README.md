@@ -45,6 +45,8 @@ Ease of use and convenience should not be sacrificed for functions not really us
 Tracking and keeping someone's spending data could be risky, you have a big responsibility to keep them safe. 
 We live in Europe and there are very strict rules for it as far as I know. So there could be always a warning, reminder as the user wants to backup to 3rd parties clouds or local. 
 
+I recorded some screen actions while doing exploratory testing but unfortunately I am not able to add them here.
+
 
 
 
