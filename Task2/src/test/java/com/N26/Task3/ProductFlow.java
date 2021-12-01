@@ -1,13 +1,9 @@
 package com.N26.Task3;
 
-import com.Utilities.ConfigurationRW;
 import io.restassured.http.ContentType;
-import io.restassured.response.ValidatableResponse;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
-import io.restassured.response.Response;
 
 import java.util.HashMap;
 import java.util.Map;
