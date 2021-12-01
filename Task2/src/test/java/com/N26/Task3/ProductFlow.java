@@ -1,7 +1,9 @@
 package com.N26.Task3;
 
+import com.Utilities.ConfigurationRW;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -11,6 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ProductFlow {
+
 
         /*
     Given accept type and Content type is JSON
@@ -69,13 +72,14 @@ public class ProductFlow {
                 .and().assertThat().header("Access-Control-Allow-Origin",equalTo("*"))
                 .and().assertThat().header("X-Powered-By",equalTo("Express"))
                 .and().header("Connection",equalTo("keep-alive"))
+                         .and().assertThat().header("allow",equalTo(""))
                 .and().body("name",equalTo("Pixel XL"),"type",equalTo("Cellphone"));
 
 
 
     }
 
-    //    a new product is created by using serilization.
+    //    a new product is created by using POJO class.
 //    an object created for custom java class
 //    all necessary data is added by using custom java class object
 //    I defined content type.
